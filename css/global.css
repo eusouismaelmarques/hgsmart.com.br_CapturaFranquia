@@ -170,7 +170,7 @@
             position: absolute;
             left: 0;
             right: 0;
-            margin-top: -5rem;
+            margin-top: -8rem;
             width: 100%;
         }
 /* Fim Cabecalho */
@@ -182,6 +182,8 @@
         main{
 
         }
+
+    /* Inicio Seção historia*/
         #historia{
             background-image: url(../img/midias/Transicao_02.jpg);
             background-position: center;
@@ -189,7 +191,100 @@
             background-size: cover;
             width: 100%;
             height: calc(100vh);
+            margin-top: 5rem;
+            
         }
+        .historia-area{
+            display: flex;
+            flex-direction: column;
+            padding-top: 5rem;
+            text-align: center;
+        }
+        .historia-area--titulo{
+            margin-bottom: 2rem;
+        }
+        .historia-area--titulo p{
+            font-size: 2.5em;
+            color: #FFFFFF;
+            font-weight: 600;
+        }
+        .historia-area--titulo span{
+            font-size: 1em;
+        }
+
+        .historia-area--conteudo{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .--conteudo-texto {
+            color: #FFFFFF;
+            max-width: 500px;
+        }
+        .--conteudo-texto p{
+            text-align:start;
+            padding-right: 1rem;
+            font-size: 1.3em;
+            width: 100%;
+        }
+        .--conteudo-img{
+            max-width: 500px;
+            padding-left: 2rem;
+        }
+        .--conteudo-img img{
+            width: 100%;
+        }
+        .btn-cta{
+            margin-top: 2rem;
+        }
+
+    /* Transição Historia*/
+        .transicao--historia{
+            margin-top: 3.5em;
+        }        
+
+
+    /*Porque Investir*/
+        #PQ_Investir{
+            background-color: #01151a;
+            width: 100%;
+            height: 1000px;
+        }
+        .pq-investir{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .pq-investir--titulo{
+            margin-top: 20%;
+            color: #FFFFFF;
+            font-weight: 600;
+        }
+        .pq-investir--titulo p{
+            font-size: 2em;
+        }
+        .pq-span{
+            font-size: 1em;
+        }
+
+    /* Grid dos beneficios*/
+
+        .pq-investir--grid{
+
+        }
+
+        .pq-investir--grid .itens{
+
+        }
+        ..pq-investir--grid .item{
+            max-width: 100px;
+            max-height: 50px;
+            border: #01c0ec solid 1px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
 
 /* Fim Conteudo */
 
