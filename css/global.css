@@ -49,13 +49,17 @@
             color: black;
         }
 
+        .span{
+            color: #01c0ec;
+        }
+
 
 /*Fim Style Global*/
 
 /* Cabeçalho */
 
         header{
-            background-image: url(..//img/midias/Transicao_01.jpg);
+            background-image: url(..//img/midias/Header_BG.jpg);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -131,6 +135,7 @@
             color: #FFFFFF;
             font-size: 1.3em;
             font-weight: 600;
+            cursor: pointer;
         }
 
     /* Direita */
