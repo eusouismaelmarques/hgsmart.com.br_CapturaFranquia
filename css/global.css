@@ -64,7 +64,7 @@
             background-repeat: no-repeat;
             background-size: cover;
             width: 100%;
-            height: calc(100vh - 0px);
+            height: 100vh ;
             overflow:hidden;
         }
         .header-area{
@@ -173,6 +173,19 @@
             margin-top: -8rem;
             width: 100%;
         }
+
+        header::after{
+            content: '';
+            position: absolute;
+            bottom: -60%;
+            background-image: url('../img/midias/Transição\ Header.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+        }
+
 /* Fim Cabecalho */
 
 
@@ -190,9 +203,8 @@
             background-repeat: no-repeat;
             background-size: cover;
             width: 100%;
-            height: calc(100vh);
+            height: 100vh;
             margin-top: 5rem;
-            
         }
         .historia-area{
             display: flex;
@@ -240,8 +252,16 @@
         }
 
     /* Transição Historia*/
-        .transicao--historia{
+        #historia::after{
+            content: '';
+            background-image: url('..//img/midias/Transição\ Section.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
             margin-top: 3.5em;
+            width: 100%;
+            height: 60%;
+            position: absolute;
         }        
 
 
@@ -274,15 +294,37 @@
 
         }
 
-        .pq-investir--grid .itens{
-
+        .pq-investir--grid-itens{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-top: 5rem;
         }
-        ..pq-investir--grid .item{
-            max-width: 100px;
-            max-height: 50px;
+        .item{
+            width: 18em;
+            height: 13em;
             border: #01c0ec solid 1px;
-            border-radius: 5px;
+            border-radius: 10px;
             text-align: center;
+            margin: 1em;
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+        .item img{
+            width: 50px;
+        }
+        .item p{
+            color: #FFFFFF;
+            font-size: 1.5em;
+        }
+        .item span{
+            font-size: 1em;
         }
 
 
