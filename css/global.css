@@ -374,6 +374,8 @@
 
         #formulario{
             background-image: url(../img/midias/Section_formulario.png);
+            background-position: center;
+            background-size: cover;
             width: 100%;
             height: 100%;
             padding-top: 2rem;
@@ -426,11 +428,92 @@
             margin-top: 5rem;
         }
 
+
+
+
     /*
     ----------
     - Footer -
     ----------
     */
+
+        footer{
+            background-color: #01151a;
+            color: #FFFFFF;
+        }
+
+        .footer-area{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 4rem;
+        }
+        .informacao--titulo{
+            margin-bottom: 2rem;
+        }
+
+        .informacao--titulo p{
+            font-size: 3em;
+            font-weight: 500;
+        }
+        .informacao--titulo p::after{
+            content: '';
+            width: 5rem;
+            height: 5px;
+            border-radius: 5px;
+            background-color: #01c0ec;
+            position: absolute;
+            display: flex;
+        }
+
+        .informacoes{
+            display: flex;
+            margin-top: 1rem;
+        }
+        .informacoes img{
+            width:25px;
+            height: 25px;
+            margin-right: 10px;
+        }
+        .informacaoes a{
+            color: #FFFFFF;
+        }
+
+
+        /*Coluna da direita*/
+
+        .footer-area--direita img{
+            width: 150px;
+        }
+        .titulo{
+            margin-bottom: 10px;
+        }
+        .titulo p{
+            font-size: 1.5em;
+            font-weight: 600;
+
+        }
+        .titulo .span{
+            font-size: 1em;
+        }
+
+
+        /*Redes Sociais*/
+
+        .informacao--redesSociais{
+            display: flex;
+            margin-top: 2rem;
+        }
+        .informacao--redesSociais img{
+            width: 40px;
+            margin-right: 10px;
+        }
+
+
+
+
+
+
 
      /*
     --------
@@ -445,6 +528,9 @@
             text-align: center;
             height: 100%;
             width: 100%;
+        }
+        .copy p{
+            font-weight:450;
         }
 
 /* Fim Conteudo */
