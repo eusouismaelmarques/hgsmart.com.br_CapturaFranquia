@@ -177,8 +177,8 @@
         header::after{
             content: '';
             position: absolute;
-            bottom: -60%;
-            background-image: url('../img/midias/Transição\ Header.png');
+            bottom: -70%;
+            background-image: url('../img/midias/Transição\ Header2.png');
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -203,8 +203,10 @@
             background-repeat: no-repeat;
             background-size: cover;
             width: 100%;
-            height: 100vh;
+            height: 100%;
             margin-top: 5rem;
+            padding-top: 5rem;
+            padding-bottom: 10rem;
         }
         .historia-area{
             display: flex;
@@ -269,7 +271,8 @@
         #PQ_Investir{
             background-color: #01151a;
             width: 100%;
-            height: 1000px;
+            height: 100%;
+            padding-bottom: 5rem;
         }
         .pq-investir{
             display: flex;
@@ -277,7 +280,7 @@
             text-align: center;
         }
         .pq-investir--titulo{
-            margin-top: 20%;
+            margin-top: 15%;
             color: #FFFFFF;
             font-weight: 600;
         }
@@ -303,7 +306,7 @@
             margin-top: 5rem;
         }
         .item{
-            width: 18em;
+            width: 20em;
             height: 13em;
             border: #01c0ec solid 1px;
             border-radius: 10px;
@@ -326,6 +329,57 @@
         .item span{
             font-size: 1em;
         }
+
+
+    /* 
+    ---------------------
+    - Estamos a procura -
+    ---------------------
+    */
+
+        #A_Procura{
+            background-image: url(../img/midias/Section4.png);
+            width: 100%;
+            height: 100%;
+            padding: 3rem;
+        }
+        .a-procura--area{
+            display: flex;
+            justify-content: space-around;
+        }
+        .a-procura--titulos{
+            margin-left: 5rem;
+            color: #FFFFFF;
+        }
+
+        .a-procura--titulos h1{
+            font-size: 2.5em;
+        }
+        .a-procura--titulos p{
+            font-size: 1em;
+        }
+
+        .a-procura--btn button{
+            background-color:#01151a ;
+            width: 18em;
+            height: 3.5em;
+            font-size: 1em;
+        }
+
+    /* 
+    --------------
+    - Formulario - 
+    --------------
+    */
+
+        #formulario{
+            background-image: url(../img/midias/Section_formulario.png);
+            width: 100%;
+            height: 100%;
+        }
+
+
+        
 
 
 /* Fim Conteudo */
