@@ -376,11 +376,76 @@
             background-image: url(../img/midias/Section_formulario.png);
             width: 100%;
             height: 100%;
+            padding-top: 2rem;
+        }
+        .formulario-area{
+            color: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
         }
 
+        .formulario-area--titulo p{
+            font-size: 4em;
+            font-weight: 600;
+        }
+        .formulario-area--titulo span{
+            font-size: 1em;
+            font-weight: 600;
+        }
 
-        
+        .formulario-area--subtitulo p{
+            font-size: 1.5em;   
+        }
 
+        .formulario-area--formulario{
+
+        }
+
+        form{
+            color: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            text-align: start;  
+            margin-top: 3rem;
+        }
+
+        .input{
+            width: 25rem;
+            margin-bottom: 0.5rem;
+            border-radius: 5px;
+        }
+        .btn-cta{
+            margin-top: 0;
+        }
+
+        .transicao-formulario img{
+            width: 100%;
+            margin-top: 5rem;
+        }
+
+    /*
+    ----------
+    - Footer -
+    ----------
+    */
+
+     /*
+    --------
+    - Copy -
+    --------
+    */
+
+        .copy{
+            background-image: url('..//img/midias/BG-copy.png');
+            color: #FFFFFF;
+            align-items: center;
+            text-align: center;
+            height: 100%;
+            width: 100%;
+        }
 
 /* Fim Conteudo */
 
