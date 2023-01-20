@@ -348,6 +348,7 @@
             justify-content: space-around;
         }
         .a-procura--titulos{
+            width: 50%;
             margin-left: 5rem;
             color: #FFFFFF;
         }
@@ -509,12 +510,6 @@
             margin-right: 10px;
         }
 
-
-
-
-
-
-
      /*
     --------
     - Copy -
@@ -535,3 +530,169 @@
 
 /* Fim Conteudo */
 
+
+
+
+/*
+    ---------------
+    - Responsivo  -
+    ---------------
+*/
+
+
+/* Responsivo (1024px - 768px) Topo Header*/
+
+        @media (max-width:1024px) and (min-width:768px){
+            .header-area--right{
+                display: none;
+            }
+            .header-area--left{
+                width: 100%;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                padding: 2rem;
+            }
+            .logo-header{
+                width: 40%;
+                height: 40%;
+            }
+            .titulos{
+                margin-top: 1rem;
+            }
+            .titulos-titulo{
+                font-size: 3em;
+                text-align: center;
+                width: 100%;
+            }
+            .titulos-subtitulo{
+                font-size: 2em;
+                text-align: center;
+            }
+            .titulos-subtituloDois{
+                flex-direction: row;
+                justify-content: center;
+            }
+            .btn-header{
+                width: 40em;
+                height: 3em;
+            }
+
+/* A Procura */
+
+            #A_Procura{
+                padding: 1rem;
+            }
+
+            .a-procura--btn{
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+/* Footer */
+
+            .footer-area{
+                padding: 2rem;
+            }
+    
+        }
+
+
+
+/* Responsivo (1024px - 768px) Topo Header*/
+
+@media (max-width:767px) and (min-width:480px){
+    .header-area--right{
+        display: none;
+    }
+    .header-area--left{
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
+    .logo-header{
+        width: 40%;
+        height: 40%;
+    }
+    .titulos{
+        margin-top: 1rem;
+    }
+    .titulos-titulo{
+        font-size: 3em;
+        text-align: center;
+        width: 100%;
+    }
+    .titulos-subtitulo{
+        font-size: 2em;
+        text-align: center;
+    }
+    .titulos-subtituloDois{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .btn-header{
+        width: 40rem;
+        height: 3em;
+    }
+
+/* Investir */
+
+    .pq-investir{
+        padding-top: 25%;
+    }
+
+    .item{
+        width: 15em;
+    }
+
+
+/* A Procura */
+
+    #A_Procura{
+        padding: 1rem;
+
+    }
+    .a-procura--area{
+        flex-direction: column;
+        align-items: center;
+    }
+    .a-procura--titulos{
+        width: 100%;
+        margin: 0;
+    }
+
+    .a-procura--btn{
+        
+    }
+
+
+/* Formulario */
+
+    .formulario-area{
+        padding: 0.5rem;
+    }
+    .formulario-area--titulo p{
+        width: 100%;
+        font-size: 3rem;
+    }
+
+    .input{
+        width: 30rem;
+        height: 2rem;
+    }
+
+/* Footer */
+
+    .footer-area{
+        padding: 1rem;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    .footer-area--direita{
+        display: none;
+
+    }
+}
