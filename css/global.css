@@ -600,7 +600,7 @@
 
 
 
-/* Responsivo (1024px - 768px) Topo Header*/
+/* Responsivo (767px - 480px) Topo Header*/
 
 @media (max-width:767px) and (min-width:480px){
     .header-area--right{
@@ -611,7 +611,9 @@
         align-items: center;
         display: flex;
         flex-direction: column;
-        padding: 2rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        margin-top: 1rem;
     }
     .logo-header{
         width: 40%;
@@ -621,12 +623,11 @@
         margin-top: 1rem;
     }
     .titulos-titulo{
-        font-size: 3em;
         text-align: center;
         width: 100%;
     }
     .titulos-subtitulo{
-        font-size: 2em;
+        font-size: 1.5em;
         text-align: center;
     }
     .titulos-subtituloDois{
@@ -696,3 +697,150 @@
 
     }
 }
+
+
+/* Responsivo (0px - 479px) Topo Header*/
+
+@media (max-width:479px) and (min-width:0px){
+    .header-area--right{
+        width: 60%;
+        margin-top: 1rem;
+    }
+    .pontos-header{
+        right: -5rem;
+    }
+    .header-area--left{
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+    .logo-header{
+        width: 40%;
+        height: 40%;
+    }
+    .titulos{
+        margin-top: 1rem;
+    }
+    .titulos-titulo{
+        font-size: 2em;
+        text-align: center;
+        width: 100%;
+    }
+    .titulos-subtitulo{
+        font-size: 1.2em;
+        text-align: center;
+    }
+    .titulos-subtituloDois{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .fature{
+        font-size: 1.5rem;
+    }
+    .btn-header{
+        width: 40rem;
+        height: 3em;
+    }
+
+/* Historia */
+
+    .--conteudo-texto p{
+        padding: 1rem;        
+    }
+
+/* Investir */
+
+    .pq-investir{
+        padding-top: 25%;
+    }
+    .pq-investir--titulo{
+        margin-top: 1rem;
+    }
+
+    .pq-investir--grid-itens {
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .item{
+        max-width: 200px;
+        height: 100px;
+    }
+    .item img{
+        max-width: 40px;
+    }
+    .item p{
+        font-size: 15px;
+    }
+    .item span{
+      font-size: 15px;  
+    }
+
+
+/* A Procura */
+
+    #A_Procura{
+        padding: 1rem;
+
+    }
+    .a-procura--area{
+        flex-direction: column;
+        align-items: center;
+    }
+    .a-procura--titulos{
+        width: 100%;
+        margin: 0;
+    }
+
+    .a-procura--btn{
+        
+    }
+
+
+/* Formulario */
+    form{
+        width: 100%;
+        padding-left: 3em;
+        padding-right: 0.5rem;
+    }
+    .formulario-area{
+        padding: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .formulario-area--titulo p{
+        width: 100%;
+        font-size: 2rem;
+    }
+    .formulario-area--subtitulo p{
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .input{
+        width: 20rem;
+        height: 2rem;
+    }
+
+/* Footer */
+
+    .footer-area{
+        padding: 1rem;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    .footer-area--direita{
+        display: none;
+
+    }
+}
+
+
+
+
+
+
