@@ -390,6 +390,15 @@
             text-align: center;
         }
 
+        .formulario-area--titulos{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+
         .formulario-area--titulo p{
             font-size: 4em;
             font-weight: 600;
@@ -398,7 +407,10 @@
             font-size: 1em;
             font-weight: 600;
         }
-
+        .formulario-area--subtitulo{
+            max-width: 600px;
+            
+        }
         .formulario-area--subtitulo p{
             font-size: 1.5em;   
         }
@@ -603,9 +615,21 @@
 /* Responsivo (767px - 480px) Topo Header*/
 
 @media (max-width:767px) and (min-width:480px){
-    .header-area--right{
-        display: none;
+    header{
+        height: 120vh
     }
+    header::after{
+        bottom: -90%;
+    }
+    .header-area--right{
+        display: ;
+        width: 60%;
+        margin-top: 1rem;
+    }
+    .pontos-header{
+        right: -5rem;
+    }
+    
     .header-area--left{
         width: 100%;
         align-items: center;
@@ -615,6 +639,12 @@
         padding-right: 0.5rem;
         margin-top: 1rem;
     }
+
+    .fature{
+        font-size: 1.5rem;
+    }
+
+
     .logo-header{
         width: 40%;
         height: 40%;
@@ -644,9 +674,27 @@
     .pq-investir{
         padding-top: 25%;
     }
+    .pq-investir--titulo{
+        margin-top: 1rem;
+    }
 
+    .pq-investir--grid-itens {
+        width: 100%;
+        margin-top: 2rem;
+    }
     .item{
-        width: 15em;
+        max-width: 200px;
+        height: 125px;
+    }
+    .item img{
+        max-width: 40px;
+        margin-bottom: 10px;
+    }
+    .item p{
+        font-size: 15px;
+    }
+    .item span{
+    font-size: 15px;  
     }
 
 
@@ -699,9 +747,9 @@
 }
 
 
-/* Responsivo (0px - 479px) Topo Header*/
+/* Responsivo (479px - 364px) Topo Header*/
 
-@media (max-width:479px) and (min-width:0px){
+@media (max-width:479px) and (min-width:364px){
     .header-area--right{
         width: 60%;
         margin-top: 1rem;
@@ -766,17 +814,18 @@
         margin-top: 2rem;
     }
     .item{
-        max-width: 200px;
+        max-width: 150px;
         height: 100px;
     }
     .item img{
-        max-width: 40px;
+        max-width: 30px;
+        margin-bottom: 10px;
     }
     .item p{
-        font-size: 15px;
+        font-size: 10px;
     }
     .item span{
-      font-size: 15px;  
+      font-size: 10px;  
     }
 
 
@@ -840,6 +889,194 @@
 }
 
 
+
+/* Responsivo (364px - 0px) Topo Header*/
+
+@media (max-width:363px) and (min-width:0px){
+    .header-area--right{
+        width: 60%;
+        margin-top: 1rem;
+    }
+    header::after {
+        height: 60%;
+        bottom: -42%;
+    }
+
+    .pontos-header{
+        right: -5rem;
+    }
+    .header-area--left{
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+    .logo-header{
+        width: 40%;
+        height: 40%;
+    }
+    .titulos{
+        margin-top: 1rem;
+    }
+    .titulos-titulo{
+        font-size: 1.5em;
+        text-align: center;
+        width: 100%;
+    }
+    .titulos-subtitulo{
+        font-size: 1em;
+        text-align: center;
+    }
+    .titulos-subtituloDois{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .fature{
+        font-size: 1rem;
+    }
+    .btn-header{
+        width: 15rem;
+        height: 2.5rem;
+        font-size: 1em;
+    }
+
+/* Historia */
+
+    .historia-area{
+        padding-top: 1rem;
+    }
+    .historia-area--titulo p{
+        font-size: 20px;
+    }
+    
+    .--conteudo-texto p{
+        font-size: 15px;
+        padding: 1rem;        
+    }
+
+    .btn-historia{
+        width: 15rem;
+        height: 2.5rem;
+        font-size: 1em;
+    }
+
+    /* Transição investir */
+
+    #historia::after{
+        height: 40%;
+    }
+
+/* Investir */
+
+    .pq-investir{
+        padding-top: 25%;
+    }
+    .pq-investir--titulo{
+        margin-top: 1rem;
+    }
+
+    .pq-investir--grid-itens {
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .item{
+        max-width: 120px;
+        height: 90px;
+    }
+    .item img{
+        max-width: 20px;
+        margin-bottom: 10px;
+    }
+    .item p{
+        font-size: 10px;
+    }
+    .item span{
+      font-size: 10px;  
+    }
+
+    .btn-investir{
+        width: 15rem;
+        height: 2.5rem;
+        font-size: 1em;
+    }
+
+    
+
+
+/* A Procura */
+
+    #A_Procura{
+        padding: 1rem;
+
+    }
+    .a-procura--area{
+        flex-direction: column;
+        align-items: center;
+    }
+    .a-procura--titulos{
+        width: 100%;
+        margin: 0;
+    }
+
+    .a-procura--titulos h1{
+        font-size:1.5em;
+    }
+    .a-procura--titulos p{
+        font-size: 10px;
+    }
+
+    .a-procura--btn{
+        
+    }
+
+
+/* Formulario */
+    form{
+        width: 100%;
+        padding-left: 0.5em;
+        padding-right: 0.5rem;
+    }
+    .formulario-area{
+        padding: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .formulario-area--titulo p{
+        width: 100%;
+        font-size: 2rem;
+    }
+    .formulario-area--subtitulo p{
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .input{
+        max-width: 250px;
+        height: 2rem;
+    }
+
+    .btn-form{
+        maxwidth: 15rem;
+        height: 2.5rem;
+        font-size: 1em;
+    }
+
+/* Footer */
+
+    .footer-area{
+        padding: 1rem;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    .footer-area--direita{
+        display: none;
+
+    }
+}
 
 
 
