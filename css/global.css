@@ -750,12 +750,22 @@
 /* Responsivo (479px - 364px) Topo Header*/
 
 @media (max-width:479px) and (min-width:364px){
+    
+    header{
+        height: 120vh
+    }
+    
     .header-area--right{
         width: 60%;
         margin-top: 1rem;
     }
+    header::after {
+        height: 60%;
+        bottom: -60%;
+    }
     .pontos-header{
         right: -5rem;
+        width: 5rem;
     }
     .header-area--left{
         width: 100%;
@@ -795,6 +805,11 @@
     }
 
 /* Historia */
+
+    #historia{
+
+        margin-top: 0;
+    }
 
     .--conteudo-texto p{
         padding: 1rem;        
