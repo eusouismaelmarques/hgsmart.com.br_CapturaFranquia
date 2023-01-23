@@ -427,11 +427,29 @@
             margin-top: 3rem;
         }
 
+        form label{
+            color: #01c0ec;
+            font-weight: 500;
+        }
+
         .input{
             width: 25rem;
             margin-bottom: 0.5rem;
-            border-radius: 5px;
+            border: transparent;
+            background-color: transparent;
+            border-bottom: solid 1px #01c0ec;
+            color: #FFFFFF;
         }
+
+        .input:focus{
+            outline: 0;
+            box-shadow: 0 0 0 0;
+        }
+
+        .input::placeholder{
+            color: #FFFFFF;
+        }
+
         .btn-cta{
             margin-top: 0;
         }
