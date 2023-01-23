@@ -10,7 +10,7 @@
 <body>
 
 <!-- Cabeçalho -->
-    <header>
+    <header >
         <div class="header-area container">
             <div class="header-area--left">
                 <img class="logo-header" src="img/midias/logo Header.png" alt="">
@@ -37,11 +37,9 @@
                 </div>
 
             <!--Botão WhatsApp-->
-                <a href="https://contate.me/interesse_franquiahg">
-                    <button class="btn-header botao--wa">
+                    <button onclick="btnUp()" id="btnForm" class="btn-header botao--wa">
                         Quero ser franqueado
                     </button>
-                </a>
             </div>
 
             <div class="header-area--right">
@@ -56,7 +54,7 @@
     </header>
     
 <!-- Conteudo -->
-    <main>
+    <main >
 
         <!-- Historia da Hg Smart -->
             <section id="historia">
@@ -95,11 +93,9 @@
                     </div>
                     <div class="btn-cta">
                         <!--Botão WhatsApp-->
-                        <a href="https://contate.me/interesse_franquiahg">
-                            <button class="botao--wa btn-historia">
-                                Quero ser franqueado
-                            </button>
-                        </a>
+                        <button onclick="btnUp()" id="btnForm" class="botao--wa btn-historia">
+                            Quero ser franqueado
+                        </button>
                     </div>
                 </div>
                 <div class="transicao--historia">
@@ -173,11 +169,9 @@
                     </div>
                     <div class="btn-cta">
                         <!--Botão WhatsApp-->
-                        <a href="https://contate.me/interesse_franquiahg">
-                            <button class="botao--wa btn-investir">
-                                Quero ser franqueado
-                            </button>
-                        </a>
+                        <button onclick="btnUp()" id="btnForm" class="botao--wa btn-investir">
+                            Quero ser franqueado
+                        </button>
                     </div>
                 </div>
             </section>
@@ -204,11 +198,9 @@
                         <div class="a-procura--btn">
                             <div class="btn-cta">
                                 <!--Botão WhatsApp-->
-                                <a href="https://contate.me/interesse_franquiahg">
-                                    <button class="botao--wa">
+                                    <button onclick="btnUp()" id="btnForm" class="botao--wa">
                                         Quero ser franqueado
                                     </button>
-                                </a>
                             </div>
                         </div>
                     </div>
@@ -234,31 +226,33 @@
                                 </p>
                             </div>
                         </div>
-                        <form action="">
+                        <form name="google-sheet1" >
                             <label for="nome">Seu nome</label>
-                            <input type="text" class="input" name="nome" required >
+                            <input type="text" class="input" name="nome" required id="nome" placeholder="Nome Completo">
 
                             <label for="e-mail">Seu e-mail</label>
-                            <input type="text" class="input" required>
+                            <input type="text" class="input" name="e-mail" required id="email" placeholder="E-mail">
 
                             <label for="whatsapp">Seu Whatsapp</label>
-                            <input type="tel" class="input" required placeholder="(xx) xxxxx-xxxx">
+                            <input type="tel" class="input" name="whatsapp" required id="whatsapp" placeholder="(xx) xxxxx-xxxx">
 
                             <label for="cidade">Sua Cidade</label>
-                            <input type="text" class="input" required>
+                            <input type="text" class="input" name="cidade" required id="cidade" placeholder="Qual cidade voce mora?">
 
                             <label for="invertimento">Capital disponível para invertir</label>
-                            <input type="" class="input" id="invertimento">
+                            <input list="valor" class="input" name="investimento"  type="text" placeholder="Escolha a opção" >
+                            <datalist id="valor">
+                                <option value="Até R$30 mil" />
+                                <option value="Mais de R$30 mil" />
+                            </datalist>
                             
+                            <div class="btn-cta">
+                                <!--Botão WhatsApp-->
+                                    <button id="module" type="submit" id="form_salve" class="botao--wa btn-form">
+                                        Quero ser franqueado
+                                    </button>
+                            </div>
                         </form>
-                        <div class="btn-cta">
-                            <!--Botão WhatsApp-->
-                            <a href="https://contate.me/interesse_franquiahg">
-                                <button class="botao--wa btn-form">
-                                    Quero ser franqueado
-                                </button>
-                            </a>
-                        </div>
                 </div>
 
                 <div class="transicao-formulario">
@@ -269,7 +263,7 @@
     </main>
 
 <!-- Footer -->
-    <footer>
+    <footer >
         <div class="footer-area container">
             <div class="footer-area--informacao">
                 <div class="informacao--titulo">
@@ -328,11 +322,9 @@
                 </div>
                 <div class="btn-cta">
                     <!--Botão WhatsApp-->
-                    <a href="https://contate.me/interesse_franquiahg">
-                        <button class="botao--wa">
+                        <button onclick="btnUp()" id="btnForm" class="botao--wa">
                             Quero ser franqueado
                         </button>
-                    </a>
                 </div>
             </div>
         </div>
@@ -340,6 +332,71 @@
             <p>© 2022 Hg Smart. Todos Direitos Reservados</p>
         </div>
     </footer>
+
+
+
+
+
+    <!--  Formulario Pop Up-->
+
+    <div class="form-popUp">
+        <div class="form-conteudo">
+            <img class="btn-cancelar" src="img/icon/cancelar.png" alt="">
+            <div class="formulario-area--titulo popUp-titulo">
+                <p>
+                    Seja <span class="span">
+                        dono do seu futuro!
+                    </span>
+                </p>
+            </div>
+            <div class=" form-area--popUp">
+                <form name="sheet" class="popUp-form">
+                    <div class="input-single">
+                        <input type="text" class="popUP-input" name="nome" required id="nome" placeholder="" autocomplete="of">
+                        <label for="nome">Seu nome</label>
+                    </div>
+            
+                    <div class="input-single">
+                        <input type="text" class="popUP-input" name="e-mail" required id="email" placeholder="" autocomplete="of">
+                        <label for="e-mail">Seu e-mail</label>
+                    </div>
+            
+                    <div class="input-single">
+                        <input type="tel" class="popUP-input" name="whatsapp" required id="whatsapp" placeholder="" autocomplete="of">
+                        <label for="whatsapp">Seu Whatsapp</label>
+                    </div>
+            
+                    <div class="input-single">
+                        <input type="text" class="popUP-input" name="cidade" required id="cidade" placeholder="" autocomplete="of">
+                        <label for="cidade">Sua Cidade</label>
+                    </div>
+            
+                    <div class="input-single">
+                        <input list="valor" id="investimento" class="popUP-input" name="investimento"  type="text" placeholder="" autocomplete="of">
+                        
+                        <datalist id="valor">
+                            <option value="Até R$30 mil" />
+                            <option value="Mais de R$30 mil" />
+                        </datalist>
+                        <label for="invertimento">Capital disponível para invertir</label>
+                    </div>
+                    <div class="form-popUp--btn btn-cta">
+                        <!--Botão WhatsApp-->
+                            <button id="btnEviarForm" type="submit" class="botao--wa btn-form">
+                                Enviar
+                            </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
+    <!--    Scripts    -->
+
+    <script src="js/envio-de-fomulario.js"></script>
+    <script src="js/envio-de-formulario-popUp.js"></script>
+    <script src="js/scrip.js"></script>
 
 </body>
 </html>

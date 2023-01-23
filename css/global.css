@@ -669,6 +669,13 @@
         height: 3em;
     }
 
+
+/* Historia */
+
+    .--conteudo-texto p{
+        padding: 1rem;
+    }
+
 /* Investir */
 
     .pq-investir{
@@ -890,6 +897,10 @@
         height: 2rem;
     }
 
+    .botao--wa{
+        width: 15em;
+    }
+
 /* Footer */
 
     .footer-area{
@@ -1075,7 +1086,7 @@
     }
 
     .btn-form{
-        maxwidth: 15rem;
+        max-width: 15rem;
         height: 2.5rem;
         font-size: 1em;
     }
@@ -1094,5 +1105,145 @@
 }
 
 
+/* Formulario Pop-Up*/
+
+    .form-popUp::before{
+        content: '';
+        background-color: #000000d7;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh; 
+    }
+
+    .form-popUp{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form-conteudo{
+        background-color: #00070a5e;
+        border: solid 0.1px #01c1ec57;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px 1px #01c1ec48;
+        position: fixed;
+        top: 20%;
+        max-width: 500px;
+        max-height: 600px;
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+        align-items: center;      
+        padding: 2.5rem;
+        margin: 1rem;
+    }
 
 
+/* Botão cancelar */
+
+
+    .form-conteudo img{
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        top: 1rem;
+        right: 0rem;
+        margin-right: 1rem;
+        cursor: pointer;
+    }
+
+    .form-area--popUp{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .form-area--popUp form{
+        padding: 0;
+        margin-top: 30px;
+    }
+
+    .popUp-titulo{
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .popUp-titulo p{
+        font-size: 25px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .form-area{
+        margin: 2em;
+    }
+
+
+
+
+
+    .input-single{
+        display:flex ;
+        flex-direction: column;
+        position: relative;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .input-single label{
+        color: #01cffd;
+        font-weight: 500;
+        position: absolute;
+        left: 0;
+        bottom: 5px;
+        transition: all 0.2s;
+        cursor: text;
+    }
+
+    form .input-single .popUP-input:focus ~ label,
+    form .input-single .popUP-input:valid ~ label{
+        transform: translateY(-24px);
+        font-size: 12px;
+        color: #01c1ec96;
+        background-color: transparent;
+    }
+
+
+
+
+
+
+    .popUp-form .input{
+        width: 100%;
+    }
+    .popUP-input{
+        margin-bottom: 0px;
+        background-color: transparent;
+        border: transparent;
+        border-bottom: solid 1px #01c1ec5b;
+        color: #FFFFFF;
+    }
+
+    .popUP-input:focus{
+        border-bottom: solid 1px #01c0ec;
+        box-shadow: 0 0 0 0;
+        outline: 0;
+        transition: all .4s ease-in-out;
+        transform-origin: left;
+        background-color: transparent;
+    }
+
+    .form-popUp--btn{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #btnEviarForm{
+        width: 50%;
+        height: 2.5rem;
+    }
