@@ -462,7 +462,13 @@
             margin-top: 5rem;
         }
 
+        /* Titulo formulario Pop-up (Obrigado) */
 
+        .pop-up--h3{
+            color: #FFFFFF;
+            font-weight: 400;
+            text-align: center;
+        }
 
 
     /*
