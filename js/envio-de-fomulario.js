@@ -23,16 +23,16 @@
         formUpContent_titulo.innerHTML = "Obrigado por sua inscrição!"
 
             
-        let h3 = document.createElement("h3")
-        let texth3 = document.createTextNode("Em breve nossa equipe entrará em contato.")
+        let h2 = document.createElement("h2")
+        let texth2 = document.createTextNode("Em breve nossa equipe entrará em contato.")
 
-        h3.classList.add("pop-up--h3")
+        h2.classList.add("pop-up--h2")
 
-        h3.appendChild(texth3)
-        formUpContent.appendChild(h3)
+        h2.appendChild(texth2)
+        formUpContent.appendChild(h2)
 
-        if(style.display === "flex"){
-            let btnEnviar = document.getElementsByClassName('botao--wa').style.zIndex = 0;
+        if(formUp_area.style.display === "flex"){
+           let btn_S =  document.getElementsByClassName('botao--wa').style.zIndex = 0;
         }
 
 
