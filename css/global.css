@@ -34,6 +34,7 @@
             font-weight: 100aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa;
         }
 
+
 /*Fim do Setup*/
 
 /*Style Global*/
@@ -136,6 +137,8 @@
             font-size: 1.3em;
             font-weight: 600;
             cursor: pointer;
+            position: relative;
+            z-index: 2;
         }
 
     /* Direita */
