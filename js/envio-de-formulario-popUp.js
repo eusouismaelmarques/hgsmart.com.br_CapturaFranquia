@@ -17,6 +17,8 @@ const scripturl = 'https://script.google.com/macros/s/AKfycbzV0mNgYuocq0L3fKwopO
 
         formUp_area.style.display = "flex"
 
+        
+
         formUpContent_form.style.display = "none"
         formUpContent_titulo.innerHTML = "Obrigado por sua inscrição!"
 
@@ -28,10 +30,6 @@ const scripturl = 'https://script.google.com/macros/s/AKfycbzV0mNgYuocq0L3fKwopO
 
         h2.appendChild(texth2)
         formUpContent.appendChild(h2)
-
-        if(style.display === "flex"){
-            let btnEnviar = document.getElementsByClassName('botao--wa').style.zIndex = 0;
-        }
 
 
         formUpContent_form.style.display = "none"

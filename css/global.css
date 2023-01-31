@@ -470,6 +470,12 @@
             text-align: center;
         }
 
+        /* Classe do botão*/
+
+        .btn--bg{
+            opacity: 0.5;
+        }
+
 
     /*
     ----------
