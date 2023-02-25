@@ -1,0 +1,1276 @@
+/*Setup*/
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Poppins,'sans-serif';
+            font-size: 100%;
+            border: 0;
+        }
+
+    /*Variaveis*/
+        :root{
+            --cor-branca: #FFFFFF;
+            --cor-azul: #01c0ec;
+            --cor-azulEscuro:#01151a;
+        }
+    /*fontes*/
+        @font-face {
+            font-family: Poppins;
+            src: url(../fonts/poppins/Poppins-Medium.ttf);
+
+            font-weight: 500;
+        }
+        @font-face {
+            font-family: Poppins;
+            src: url(../fonts/poppins/Poppins-ExtraBold.ttf);
+
+            font-weight: 900;
+        }
+        @font-face {
+            font-family: Poppins;
+            src: url(../fonts/poppins/Poppins-ExtraLight.ttf);
+
+            font-weight: 100;
+        }
+
+
+/*Fim do Setup*/
+
+/*Style Global*/
+
+        .container{
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+
+        a{
+            list-style: none;
+            text-decoration: none;
+            color: black;
+        }
+
+        .span{
+            color: #01c0ec;
+        }
+
+
+/*Fim Style Global*/
+
+/* Cabeçalho */
+
+        header{
+            background-image: url(..//img/midias/Header_BG.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            overflow:hidden;
+        }
+        .header-area{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap; 
+        }
+
+    /* Esquerda */    
+
+        .header-area--left{
+            background-color: ;
+            margin-top: 5rem;
+            width: 60%;
+            padding: 1rem;
+            padding-left: 3rem;
+        }
+        .logo-header{
+            height: 9rem;
+            margin-bottom: 2em;
+        }
+
+        .titulos-titulo{
+            font-size: 2em;
+            font-weight: 900;
+            color: #FFFFFF;
+            margin-bottom: 1rem;
+            text-transform:uppercase ;
+        }
+        .titulos-subtitulo{
+            font-size: 1.8em;
+            font-weight: 100;
+            color: #FFFFFF;
+        }
+        .titulos-subtituloDois{
+            align-items: center;
+            margin-top: 2em;
+            display: flex;
+        }
+
+        .fature{
+            font-weight: 200;
+            text-transform: uppercase;
+            font-size: 2.2em;
+            color: #FFFFFF
+        }
+
+        .oitenta{
+            color: #01c0ec;
+            font-size: 1.1em;
+            font-weight:600;
+        }
+
+        .titulos-subtituloDois img{
+            width: 1.5em;
+            margin-right: 10px;
+        }
+
+
+        .botao--wa{
+            width: 18em;
+            height: 2.5em;
+            border-radius: 7px;
+            margin-top: 2em;
+            border: transparent;
+            background-color: #01c0ec;
+            color: #FFFFFF;
+            font-size: 1.3em;
+            font-weight: 600;
+            cursor: pointer;
+            position: relative;
+            z-index: 2;
+        }
+
+    /* Direita */
+
+        .header-area--right{
+            background-color: ;
+            margin-top: 5rem;
+            width: 40%;
+            position: relative;
+        }
+        .pontos-header{
+            position: absolute;
+            right: 0;
+            width: 8rem;
+
+        }
+        .img-header{
+            width: 100%;
+        }
+        .header-area--right::after{
+            content: '';
+            background-color:var(--cor-azul);
+            width: 3rem;
+            height: 0.8rem;
+            border-radius: 10px;
+            position: absolute;
+            bottom: -2rem;
+            left: 50%;
+        }
+    /* Transição */
+        
+
+        header::after{
+            content: '';
+            position: absolute;
+            bottom: -70%;
+            background-image: url('../img/midias/Transicao-Header2.png');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+/* Fim Cabecalho */
+
+
+
+/* Conteudo */
+
+        main{
+
+        }
+
+    /* Inicio Seção historia*/
+        #historia{
+            background-image: url(../img/midias/Transicao_02.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            margin-top: 5rem;
+            padding-top: 5rem;
+            padding-bottom: 10rem;
+        }
+        .historia-area{
+            display: flex;
+            flex-direction: column;
+            padding-top: 5rem;
+            text-align: center;
+        }
+        .historia-area--titulo{
+            margin-bottom: 2rem;
+        }
+        .historia-area--titulo p{
+            font-size: 2.5em;
+            color: #FFFFFF;
+            font-weight: 600;
+        }
+        .historia-area--titulo span{
+            font-size: 1em;
+        }
+
+        .historia-area--conteudo{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .--conteudo-texto {
+            color: #FFFFFF;
+            max-width: 500px;
+        }
+        .--conteudo-texto p{
+            text-align:start;
+            padding-right: 1rem;
+            font-size: 1.3em;
+            width: 100%;
+        }
+        .--conteudo-img{
+            max-width: 500px;
+            padding-left: 2rem;
+        }
+        .--conteudo-img img{
+            width: 100%;
+        }
+        .btn-cta{
+            margin-top: 2rem;
+        }
+
+    /* Transição Historia*/
+        #historia::after{
+            content: '';
+            background-image: url('..//img/midias/Transicao-Section.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-top: 3.5em;
+            width: 100%;
+            height: 60%;
+            position: absolute;
+        }        
+
+
+    /*Porque Investir*/
+        #PQ_Investir{
+            background-color: #01151a;
+            width: 100%;
+            height: 100%;
+            padding-bottom: 5rem;
+        }
+        .pq-investir{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .pq-investir--titulo{
+            margin-top: 15%;
+            color: #FFFFFF;
+            font-weight: 600;
+        }
+        .pq-investir--titulo p{
+            font-size: 2em;
+        }
+        .pq-span{
+            font-size: 1em;
+        }
+
+    /* Grid dos beneficios*/
+
+        .pq-investir--grid{
+
+        }
+
+        .pq-investir--grid-itens{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-top: 5rem;
+        }
+        .item{
+            width: 20em;
+            height: 13em;
+            border: #01c0ec solid 1px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 1em;
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+        .item img{
+            width: 50px;
+        }
+        .item p{
+            color: #FFFFFF;
+            font-size: 1.5em;
+        }
+        .item span{
+            font-size: 1em;
+        }
+
+
+    /* 
+    ---------------------
+    - Estamos a procura -
+    ---------------------
+    */
+
+        #A_Procura{
+            background-image: url(../img/midias/Section4.png);
+            width: 100%;
+            height: 100%;
+            padding: 3rem;
+        }
+        .a-procura--area{
+            display: flex;
+            justify-content: space-around;
+        }
+        .a-procura--titulos{
+            width: 50%;
+            margin-left: 5rem;
+            color: #FFFFFF;
+        }
+
+        .a-procura--titulos h1{
+            font-size: 2.5em;
+        }
+        .a-procura--titulos p{
+            font-size: 1em;
+        }
+
+        .a-procura--btn button{
+            background-color:#01151a ;
+            width: 18em;
+            height: 3.5em;
+            font-size: 1em;
+        }
+
+    /* 
+    --------------
+    - Formulario - 
+    --------------
+    */
+
+        #formulario{
+            background-image: url(../img/midias/Section_formulario.png);
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            padding-top: 2rem;
+        }
+        .formulario-area{
+            color: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .formulario-area--titulos{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+
+        .formulario-area--titulo p{
+            font-size: 4em;
+            font-weight: 600;
+        }
+        .formulario-area--titulo span{
+            font-size: 1em;
+            font-weight: 600;
+        }
+        .formulario-area--subtitulo{
+            max-width: 600px;
+            
+        }
+        .formulario-area--subtitulo p{
+            font-size: 1.5em;   
+        }
+
+        .formulario-area--formulario{
+
+        }
+
+        form{
+            color: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            text-align: start;  
+            margin-top: 3rem;
+        }
+
+        form label{
+            color: #01c0ec;
+            font-weight: 500;
+        }
+
+        .input{
+            width: 25rem;
+            margin-bottom: 0.5rem;
+            border: transparent;
+            background-color: transparent;
+            border-bottom: solid 1px #01c0ec;
+            color: #FFFFFF;
+        }
+
+        .input:focus{
+            outline: 0;
+            box-shadow: 0 0 0 0;
+        }
+
+        .input::placeholder{
+            color: #FFFFFF;
+        }
+
+        .btn-cta{
+            margin-top: 0;
+        }
+
+        .transicao-formulario img{
+            width: 100%;
+            margin-top: 5rem;
+        }
+
+        /* Titulo formulario Pop-up (Obrigado) */
+
+        .pop-up--h2{
+            color: var(--cor-azul);
+            font-weight: 500;
+            text-align: center;
+        }
+
+        /* Classe do botão*/
+
+        .btn--bg{
+            opacity: 0.5;
+        }
+
+
+    /*
+    ----------
+    - Footer -
+    ----------
+    */
+
+        footer{
+            background-color: #01151a;
+            color: #FFFFFF;
+        }
+
+        .footer-area{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 4rem;
+        }
+        .informacao--titulo{
+            margin-bottom: 2rem;
+        }
+
+        .informacao--titulo p{
+            font-size: 3em;
+            font-weight: 500;
+        }
+        .informacao--titulo p::after{
+            content: '';
+            width: 5rem;
+            height: 5px;
+            border-radius: 5px;
+            background-color: #01c0ec;
+            position: absolute;
+            display: flex;
+        }
+
+        .informacoes{
+            display: flex;
+            margin-top: 1rem;
+        }
+        .informacoes img{
+            width:25px;
+            height: 25px;
+            margin-right: 10px;
+        }
+        .informacaoes a{
+            color: #FFFFFF;
+        }
+
+
+        /*Coluna da direita*/
+
+        .footer-area--direita img{
+            width: 150px;
+        }
+        .titulo{
+            margin-bottom: 10px;
+        }
+        .titulo p{
+            font-size: 1.5em;
+            font-weight: 600;
+
+        }
+        .titulo .span{
+            font-size: 1em;
+        }
+
+
+        /*Redes Sociais*/
+
+        .informacao--redesSociais{
+            display: flex;
+            margin-top: 2rem;
+        }
+        .informacao--redesSociais img{
+            width: 40px;
+            margin-right: 10px;
+        }
+
+     /*
+    --------
+    - Copy -
+    --------
+    */
+
+        .copy{
+            background-image: url('..//img/midias/BG-copy.png');
+            color: #FFFFFF;
+            align-items: center;
+            text-align: center;
+            height: 100%;
+            width: 100%;
+        }
+        .copy p{
+            font-weight:450;
+        }
+
+/* Fim Conteudo */
+
+
+
+
+/*
+    ---------------
+    - Responsivo  -
+    ---------------
+*/
+
+
+/* Responsivo (1024px - 768px) Topo Header*/
+
+        @media (max-width:1024px) and (min-width:768px){
+            .header-area--right{
+                display: none;
+            }
+            .header-area--left{
+                width: 100%;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                padding: 2rem;
+            }
+            .logo-header{
+                width: 40%;
+                height: 40%;
+            }
+            .titulos{
+                margin-top: 1rem;
+            }
+            .titulos-titulo{
+                font-size: 3em;
+                text-align: center;
+                width: 100%;
+            }
+            .titulos-subtitulo{
+                font-size: 2em;
+                text-align: center;
+            }
+            .titulos-subtituloDois{
+                flex-direction: row;
+                justify-content: center;
+            }
+            .btn-header{
+                width: 40em;
+                height: 3em;
+            }
+
+/* A Procura */
+
+            #A_Procura{
+                padding: 1rem;
+            }
+
+            .a-procura--btn{
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+/* Footer */
+
+            .footer-area{
+                padding: 2rem;
+            }
+    
+        }
+
+
+
+/* Responsivo (767px - 480px) Topo Header*/
+
+@media (max-width:767px) and (min-width:480px){
+    header{
+        height: 120vh
+    }
+    header::after{
+        bottom: -90%;
+    }
+    .header-area--right{
+        display: ;
+        width: 60%;
+        margin-top: 1rem;
+    }
+    .pontos-header{
+        right: -5rem;
+    }
+    
+    .header-area--left{
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    .fature{
+        font-size: 1.5rem;
+    }
+
+
+    .logo-header{
+        width: 40%;
+        height: 40%;
+    }
+    .titulos{
+        margin-top: 1rem;
+    }
+    .titulos-titulo{
+        text-align: center;
+        width: 100%;
+    }
+    .titulos-subtitulo{
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .titulos-subtituloDois{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .btn-header{
+        width: 40rem;
+        height: 3em;
+    }
+
+
+/* Historia */
+
+    .--conteudo-texto p{
+        padding: 1rem;
+    }
+
+/* Investir */
+
+    .pq-investir{
+        padding-top: 25%;
+    }
+    .pq-investir--titulo{
+        margin-top: 1rem;
+    }
+
+    .pq-investir--grid-itens {
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .item{
+        max-width: 200px;
+        height: 125px;
+    }
+    .item img{
+        max-width: 40px;
+        margin-bottom: 10px;
+    }
+    .item p{
+        font-size: 15px;
+    }
+    .item span{
+    font-size: 15px;  
+    }
+
+
+/* A Procura */
+
+    #A_Procura{
+        padding: 1rem;
+
+    }
+    .a-procura--area{
+        flex-direction: column;
+        align-items: center;
+    }
+    .a-procura--titulos{
+        width: 100%;
+        margin: 0;
+    }
+
+    .a-procura--btn{
+        
+    }
+
+
+/* Formulario */
+
+    .formulario-area{
+        padding: 0.5rem;
+    }
+    .formulario-area--titulo p{
+        width: 100%;
+        font-size: 3rem;
+    }
+
+    .input{
+        width: 30rem;
+        height: 2rem;
+    }
+
+/* Footer */
+
+    .footer-area{
+        padding: 1rem;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    .footer-area--direita{
+        display: none;
+
+    }
+}
+
+
+/* Responsivo (479px - 364px) Topo Header*/
+
+@media (max-width:479px) and (min-width:364px){
+    
+    header{
+        height: 120vh
+    }
+    
+    .header-area--right{
+        width: 60%;
+        margin-top: 1rem;
+    }
+    header::after {
+        height: 60%;
+        bottom: -60%;
+    }
+    .pontos-header{
+        right: -5rem;
+        width: 5rem;
+    }
+    .header-area--left{
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+    .logo-header{
+        width: 40%;
+        height: 40%;
+    }
+    .titulos{
+        margin-top: 1rem;
+    }
+    .titulos-titulo{
+        font-size: 2em;
+        text-align: center;
+        width: 100%;
+    }
+    .titulos-subtitulo{
+        font-size: 1.2em;
+        text-align: center;
+    }
+    .titulos-subtituloDois{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .fature{
+        font-size: 1.5rem;
+    }
+    .btn-header{
+        width: 40rem;
+        height: 3em;
+    }
+
+/* Historia */
+
+    #historia{
+
+        margin-top: 0;
+    }
+
+    .--conteudo-texto p{
+        padding: 1rem;        
+    }
+
+/* Investir */
+
+    .pq-investir{
+        padding-top: 25%;
+    }
+    .pq-investir--titulo{
+        margin-top: 1rem;
+    }
+
+    .pq-investir--grid-itens {
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .item{
+        max-width: 150px;
+        height: 100px;
+    }
+    .item img{
+        max-width: 30px;
+        margin-bottom: 10px;
+    }
+    .item p{
+        font-size: 10px;
+    }
+    .item span{
+      font-size: 10px;  
+    }
+
+
+/* A Procura */
+
+    #A_Procura{
+        padding: 1rem;
+
+    }
+    .a-procura--area{
+        flex-direction: column;
+        align-items: center;
+    }
+    .a-procura--titulos{
+        width: 100%;
+        margin: 0;
+    }
+
+    .a-procura--btn{
+        
+    }
+
+
+/* Formulario */
+    form{
+        width: 100%;
+        padding-left: 3em;
+        padding-right: 0.5rem;
+    }
+    .formulario-area{
+        padding: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .formulario-area--titulo p{
+        width: 100%;
+        font-size: 2rem;
+    }
+    .formulario-area--subtitulo p{
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .input{
+        width: 20rem;
+        height: 2rem;
+    }
+
+    .botao--wa{
+        width: 15em;
+    }
+
+/* Footer */
+
+    .footer-area{
+        padding: 1rem;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    .footer-area--direita{
+        display: none;
+
+    }
+}
+
+
+
+/* Responsivo (364px - 0px) Topo Header*/
+
+@media (max-width:363px) and (min-width:0px){
+    .header-area--right{
+        width: 60%;
+        margin-top: 1rem;
+    }
+    header::after {
+        height: 60%;
+        bottom: -42%;
+    }
+
+    .pontos-header{
+        right: -5rem;
+    }
+    .header-area--left{
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+    .logo-header{
+        width: 40%;
+        height: 40%;
+    }
+    .titulos{
+        margin-top: 1rem;
+    }
+    .titulos-titulo{
+        font-size: 1.5em;
+        text-align: center;
+        width: 100%;
+    }
+    .titulos-subtitulo{
+        font-size: 1em;
+        text-align: center;
+    }
+    .titulos-subtituloDois{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .fature{
+        font-size: 1rem;
+    }
+    .btn-header{
+        width: 15rem;
+        height: 2.5rem;
+        font-size: 1em;
+    }
+
+/* Historia */
+
+    .historia-area{
+        padding-top: 1rem;
+    }
+    .historia-area--titulo p{
+        font-size: 20px;
+    }
+    
+    .--conteudo-texto p{
+        font-size: 15px;
+        padding: 1rem;        
+    }
+
+    .btn-historia{
+        width: 15rem;
+        height: 2.5rem;
+        font-size: 1em;
+    }
+
+    /* Transição investir */
+
+    #historia::after{
+        height: 40%;
+    }
+
+/* Investir */
+
+    .pq-investir{
+        padding-top: 25%;
+    }
+    .pq-investir--titulo{
+        margin-top: 1rem;
+    }
+
+    .pq-investir--grid-itens {
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .item{
+        max-width: 120px;
+        height: 90px;
+    }
+    .item img{
+        max-width: 20px;
+        margin-bottom: 10px;
+    }
+    .item p{
+        font-size: 10px;
+    }
+    .item span{
+      font-size: 10px;  
+    }
+
+    .btn-investir{
+        width: 15rem;
+        height: 2.5rem;
+        font-size: 1em;
+    }
+
+    
+
+
+/* A Procura */
+
+    #A_Procura{
+        padding: 1rem;
+
+    }
+    .a-procura--area{
+        flex-direction: column;
+        align-items: center;
+    }
+    .a-procura--titulos{
+        width: 100%;
+        margin: 0;
+    }
+
+    .a-procura--titulos h1{
+        font-size:1.5em;
+    }
+    .a-procura--titulos p{
+        font-size: 10px;
+    }
+
+    .a-procura--btn{
+        
+    }
+
+
+/* Formulario */
+    form{
+        width: 100%;
+        padding-left: 0.5em;
+        padding-right: 0.5rem;
+    }
+    .formulario-area{
+        padding: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .formulario-area--titulo p{
+        width: 100%;
+        font-size: 2rem;
+    }
+    .formulario-area--subtitulo p{
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .input{
+        max-width: 250px;
+        height: 2rem;
+    }
+
+    .btn-form{
+        max-width: 15rem;
+        height: 2.5rem;
+        font-size: 1em;
+    }
+
+/* Footer */
+
+    .footer-area{
+        padding: 1rem;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    .footer-area--direita{
+        display: none;
+
+    }
+}
+
+
+/* Formulario Pop-Up*/
+
+    .form-popUp::before{
+        content: '';
+        background-color: #000000d7;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh; 
+    }
+
+    .form-popUp{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form-conteudo{
+        background-color: #00070a5e;
+        border: solid 0.1px #01c1ec57;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px 1px #01c1ec48;
+        position: fixed;
+        top: 20%;
+        max-width: 500px;
+        max-height: 600px;
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+        align-items: center;      
+        padding: 2.5rem;
+        margin: 1rem;
+    }
+
+
+/* Botão cancelar */
+
+
+    .form-conteudo img{
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        top: 1rem;
+        right: 0rem;
+        margin-right: 1rem;
+        cursor: pointer;
+    }
+
+    .form-area--popUp{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .form-area--popUp form{
+        padding: 0;
+        margin-top: 30px;
+    }
+
+    .popUp-titulo{
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .popUp-titulo p{
+        font-size: 25px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .form-area{
+        margin: 2em;
+    }
+
+
+
+
+
+    .input-single{
+        display:flex ;
+        flex-direction: column;
+        position: relative;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .input-single label{
+        color: #01cffd;
+        font-weight: 500;
+        position: absolute;
+        left: 0;
+        bottom: 5px;
+        transition: all 0.2s;
+        cursor: text;
+    }
+
+    form .input-single .popUP-input:focus ~ label,
+    form .input-single .popUP-input:valid ~ label{
+        transform: translateY(-24px);
+        font-size: 12px;
+        color: #01c1ec96;
+        background-color: transparent;
+    }
+
+
+
+
+
+
+    .popUp-form .input{
+        width: 100%;
+    }
+    .popUP-input{
+        margin-bottom: 0px;
+        background-color: transparent;
+        border: transparent;
+        border-bottom: solid 1px #01c1ec5b;
+        color: #FFFFFF;
+    }
+
+    .popUP-input:focus{
+        border-bottom: solid 1px #01c0ec;
+        box-shadow: 0 0 0 0;
+        outline: 0;
+        transition: all .4s ease-in-out;
+        transform-origin: left;
+        background-color: transparent;
+    }
+
+    .form-popUp--btn{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #btnEviarForm{
+        width: 50%;
+        height: 2.5rem;
+    }

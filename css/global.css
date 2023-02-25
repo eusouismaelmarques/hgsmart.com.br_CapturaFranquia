@@ -4,8 +4,8 @@
             margin: 0;
             box-sizing: border-box;
             font-family: Poppins,'sans-serif';
-            font-size: 15px;
-
+            font-size: 100%;
+            border: 0;
         }
 
     /*Variaveis*/
@@ -31,7 +31,7 @@
             font-family: Poppins;
             src: url(../fonts/poppins/Poppins-ExtraLight.ttf);
 
-            font-weight: 100aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa;
+            font-weight: 100;
         }
 
 
@@ -60,19 +60,24 @@
 /* Cabeçalho */
 
         header{
-            background-image: url(..//img/midias/Header_BG.jpg);
-            background-position: center;
+            background-image: url(..//img/midias/Desktop/Desktop1024+.jpg);
+            background-position: bottom;
             background-repeat: no-repeat;
             background-size: cover;
             width: 100%;
-            height: 100vh ;
+            height: 100vh;
+            max-height: 1000px;
             overflow:hidden;
+            margin-bottom: -1px;
+            padding-bottom: 10rem;
         }
         .header-area{
             display: flex;
             flex-direction: row;
             justify-content: space-around;
             flex-wrap: wrap; 
+            padding: 1rem;
+            width: 100%;
         }
 
     /* Esquerda */    
@@ -80,13 +85,17 @@
         .header-area--left{
             background-color: ;
             margin-top: 5rem;
-            width: 60%;
-            padding: 1rem;
-            padding-left: 3rem;
+            width: 50%;
         }
         .logo-header{
-            height: 9rem;
+            width: 50%;
             margin-bottom: 2em;
+        }
+        .titulo {
+            display: flex;
+            flex-direction: row;
+            text-align: start;
+
         }
 
         .titulos-titulo{
@@ -95,6 +104,7 @@
             color: #FFFFFF;
             margin-bottom: 1rem;
             text-transform:uppercase ;
+            text-align: start;
         }
         .titulos-subtitulo{
             font-size: 1.8em;
@@ -144,7 +154,6 @@
     /* Direita */
 
         .header-area--right{
-            background-color: ;
             margin-top: 5rem;
             width: 40%;
             position: relative;
@@ -153,7 +162,6 @@
             position: absolute;
             right: 0;
             width: 8rem;
-
         }
         .img-header{
             width: 100%;
@@ -169,47 +177,38 @@
             left: 50%;
         }
     /* Transição */
-        .transicao{
-            position: absolute;
-            left: 0;
-            right: 0;
-            margin-top: -8rem;
-            width: 100%;
-        }
-
+        
+        /*
         header::after{
             content: '';
             position: absolute;
             bottom: -70%;
             background-image: url('../img/midias/Transicao-Header2.png');
-            background-position: center;
+            background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
             width: 100%;
             height: 100%;
         }
+        */
+        
 
 /* Fim Cabecalho */
 
-
-
 /* Conteudo */
-
-        main{
-
-        }
 
     /* Inicio Seção historia*/
         #historia{
-            background-image: url(../img/midias/Transicao_02.jpg);
-            background-position: center;
+            background-image: url(../img/midias/Desktop/Desktop1024+_Historia.jpg);
+            background-position: top;
             background-repeat: no-repeat;
             background-size: cover;
             width: 100%;
-            height: 100%;
-            margin-top: 5rem;
-            padding-top: 5rem;
+            height: auto;
+            margin-top: 0rem;
+            padding-top: 0rem;
             padding-bottom: 10rem;
+            padding-top: 2rem;
         }
         .historia-area{
             display: flex;
@@ -257,6 +256,7 @@
         }
 
     /* Transição Historia*/
+    /*
         #historia::after{
             content: '';
             background-image: url('..//img/midias/Transicao-Section.png');
@@ -268,14 +268,19 @@
             height: 60%;
             position: absolute;
         }        
-
+    */
 
     /*Porque Investir*/
         #PQ_Investir{
-            background-color: #01151a;
+            background-image: url(../img/midias/Desktop/Desktop1024+_Investimento.png);
+            background-position: top;
+            background-size: cover;
+            background-repeat: no-repeat;
             width: 100%;
-            height: 100%;
+            max-height: 1000px;
             padding-bottom: 5rem;
+            padding-top: 4rem;
+            margin-top: -5rem;
         }
         .pq-investir{
             display: flex;
@@ -585,48 +590,170 @@
 */
 
 
-/* Responsivo (1024px - 768px) Topo Header*/
+/* ----- Responsivo Mobile 1024px -----*/
 
-        @media (max-width:1024px) and (min-width:768px){
+@media screen and (max-width:1024px){
+            header{
+                background-image: url(..//img/midias/Mobile1024px/Mobile1024_BG-Header.jpg);
+                background-position: bottom;
+                height: 100%;
+                padding-bottom: 3rem;
+            }
+            .header-area{
+                padding: 1rem;
+            }
             .header-area--right{
-                display: none;
+                display: flex;
+                justify-content: center;
+                width: 60%;
+                max-width: 300px;
+                margin-bottom: 5rem;
+            }
+            .pontos-header{
+                right: -1rem;
+                width: 5rem;
             }
             .header-area--left{
-                width: 100%;
-                align-items: center;
                 display: flex;
+                justify-content: center;
                 flex-direction: column;
-                padding: 2rem;
+                align-items:center ;
+                max-width: 400px;
+                margin-top: 10px;
             }
             .logo-header{
-                width: 40%;
-                height: 40%;
+                width: 50%;
+                margin-bottom: 1rem;
+                margin-top: -1rem;
             }
             .titulos{
                 margin-top: 1rem;
+
             }
             .titulos-titulo{
-                font-size: 3em;
-                text-align: center;
+                font-size: 1.5rem;
                 width: 100%;
             }
             .titulos-subtitulo{
-                font-size: 2em;
-                text-align: center;
+                font-size: 100%;
+                text-align: start;
             }
             .titulos-subtituloDois{
                 flex-direction: row;
-                justify-content: center;
+                justify-content: start;
+                margin-top: 1rem;
+            }
+        
+            .fature{
+                font-size: 1rem;
             }
             .btn-header{
-                width: 40em;
-                height: 3em;
+                width: 15rem;
+                height: 2.5rem;
+                font-size: 1em;
             }
+    
+            .img-header{
+                width: 100%;
+            }
+    /* Historia */
+            #historia{
+                background-image: url(../img/midias/Mobile1024px/Mobile1024_BG-Historia.jpg);
+                background-position: top;
+                height: 100%;
+                padding-bottom: 1rem;
+            }       
+            .historia-area{
+                width: 100%;
+                padding-top: 3rem;
+                padding-bottom: 5rem;
+            }
+            .historia-area--titulo{
+                margin-bottom: 1rem;
+            }
+            .historia-area--titulo p{
+                font-size: 100%;
+            }
+
+            .historia-area--conteudo{
+                padding: 1rem;
+            }
+            .--conteudo-texto{
+                max-width: 50%;
+
+            }
+            .--conteudo-texto p{
+                font-size: 100%;
+                padding: 0.5rem;        
+            }
+            .--conteudo-img{
+                max-width: 50%;
+                padding: 10px;
+            }
+            .btn-historia{
+                width: 15rem;
+                height: 2.5rem;
+                font-size: 1em;
+            }
+
+    /* Investir */
+        #PQ_Investir{
+            background-image: url(../img/midias/Mobile1024px/Mobile1024_BG-Investimento.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top;
+            padding-bottom: 2rem;
+            padding-top: 2rem;
+            margin-top: -3rem;
+        }
+
+        .pq-investir--titulo{
+            margin-top: 3rem;
+            width: 100%;
+        }
+        .pq-investir--titulo p{
+            font-size: 100%;
+        }
+        .pq-investir--grid {
+            display: flex;
+            justify-content: center;
+        }
+        .pq-investir--grid-itens {
+            width: 60%;
+            margin-top: 1rem;
+        }
+        .item{
+            max-width: 7rem;
+            height: 6rem;
+        }
+        .item img{
+            max-width: 20px;
+            margin-bottom: 10px;
+        }
+        .item p{
+            font-size: 10px;
+        }
+        .item span{
+        font-size: 10px;  
+        }
+
+        .btn-investir{
+            width: 15rem;
+            height: 2.5rem;
+            font-size: 1em;
+        }
 
 /* A Procura */
 
             #A_Procura{
                 padding: 1rem;
+            }
+
+            .a-procura--titulos h1{
+                font-size: 2em;
+            }
+            .a-procura--titulos p{
+                font-weight: 300;
             }
 
             .a-procura--btn{
@@ -638,359 +765,100 @@
 /* Footer */
 
             .footer-area{
-                padding: 2rem;
+                padding: 1rem;
+                flex-wrap: ;
+                justify-content:center;
+            }
+            .informacao--titulo p{
+                font-size: 2em;
+            }
+            .informacoes img {
+                width: 15px;
+                height: 15px;
+                margin-right: 10px;
+            }
+            .informacoes{
+                width: 100%;
+            }
+            .informacoes p{
+                font-size: 15px;
+            }
+            .informacao--redesSociais img{
+                width: 30px;
+            }
+            .footer-area--direita{
+                margin-left: 2rem;
+            }
+            .footer-area--direita img{
+                width: 100px;
+            }
+            .titulo p{
+                font-size: 1rem;
+            }
+
+            .footer-area .botao--wa{
+                width: 80%;
+                height: 3em;
+                font-size: 15px;
             }
     
-        }
-
-
-
-/* Responsivo (767px - 480px) Topo Header*/
-
-@media (max-width:767px) and (min-width:480px){
-    header{
-        height: 120vh
-    }
-    header::after{
-        bottom: -90%;
-    }
-    .header-area--right{
-        display: ;
-        width: 60%;
-        margin-top: 1rem;
-    }
-    .pontos-header{
-        right: -5rem;
-    }
-    
-    .header-area--left{
-        width: 100%;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        margin-top: 1rem;
-    }
-
-    .fature{
-        font-size: 1.5rem;
-    }
-
-
-    .logo-header{
-        width: 40%;
-        height: 40%;
-    }
-    .titulos{
-        margin-top: 1rem;
-    }
-    .titulos-titulo{
-        text-align: center;
-        width: 100%;
-    }
-    .titulos-subtitulo{
-        font-size: 1.5em;
-        text-align: center;
-    }
-    .titulos-subtituloDois{
-        flex-direction: row;
-        justify-content: center;
-    }
-    .btn-header{
-        width: 40rem;
-        height: 3em;
-    }
-
-
-/* Historia */
-
-    .--conteudo-texto p{
-        padding: 1rem;
-    }
-
-/* Investir */
-
-    .pq-investir{
-        padding-top: 25%;
-    }
-    .pq-investir--titulo{
-        margin-top: 1rem;
-    }
-
-    .pq-investir--grid-itens {
-        width: 100%;
-        margin-top: 2rem;
-    }
-    .item{
-        max-width: 200px;
-        height: 125px;
-    }
-    .item img{
-        max-width: 40px;
-        margin-bottom: 10px;
-    }
-    .item p{
-        font-size: 15px;
-    }
-    .item span{
-    font-size: 15px;  
-    }
-
-
-/* A Procura */
-
-    #A_Procura{
-        padding: 1rem;
-
-    }
-    .a-procura--area{
-        flex-direction: column;
-        align-items: center;
-    }
-    .a-procura--titulos{
-        width: 100%;
-        margin: 0;
-    }
-
-    .a-procura--btn{
-        
-    }
-
-
-/* Formulario */
-
-    .formulario-area{
-        padding: 0.5rem;
-    }
-    .formulario-area--titulo p{
-        width: 100%;
-        font-size: 3rem;
-    }
-
-    .input{
-        width: 30rem;
-        height: 2rem;
-    }
-
-/* Footer */
-
-    .footer-area{
-        padding: 1rem;
-        flex-wrap: wrap-reverse;
-        justify-content: center;
-    }
-    .footer-area--direita{
-        display: none;
-
-    }
-}
-
-
-/* Responsivo (479px - 364px) Topo Header*/
-
-@media (max-width:479px) and (min-width:364px){
-    
-    header{
-        height: 120vh
-    }
-    
-    .header-area--right{
-        width: 60%;
-        margin-top: 1rem;
-    }
-    header::after {
-        height: 60%;
-        bottom: -60%;
-    }
-    .pontos-header{
-        right: -5rem;
-        width: 5rem;
-    }
-    .header-area--left{
-        width: 100%;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        padding: 1rem;
-        margin-top: 2rem;
-    }
-    .logo-header{
-        width: 40%;
-        height: 40%;
-    }
-    .titulos{
-        margin-top: 1rem;
-    }
-    .titulos-titulo{
-        font-size: 2em;
-        text-align: center;
-        width: 100%;
-    }
-    .titulos-subtitulo{
-        font-size: 1.2em;
-        text-align: center;
-    }
-    .titulos-subtituloDois{
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .fature{
-        font-size: 1.5rem;
-    }
-    .btn-header{
-        width: 40rem;
-        height: 3em;
-    }
-
-/* Historia */
-
-    #historia{
-
-        margin-top: 0;
-    }
-
-    .--conteudo-texto p{
-        padding: 1rem;        
-    }
-
-/* Investir */
-
-    .pq-investir{
-        padding-top: 25%;
-    }
-    .pq-investir--titulo{
-        margin-top: 1rem;
-    }
-
-    .pq-investir--grid-itens {
-        width: 100%;
-        margin-top: 2rem;
-    }
-    .item{
-        max-width: 150px;
-        height: 100px;
-    }
-    .item img{
-        max-width: 30px;
-        margin-bottom: 10px;
-    }
-    .item p{
-        font-size: 10px;
-    }
-    .item span{
-      font-size: 10px;  
-    }
-
-
-/* A Procura */
-
-    #A_Procura{
-        padding: 1rem;
-
-    }
-    .a-procura--area{
-        flex-direction: column;
-        align-items: center;
-    }
-    .a-procura--titulos{
-        width: 100%;
-        margin: 0;
-    }
-
-    .a-procura--btn{
-        
-    }
-
-
-/* Formulario */
-    form{
-        width: 100%;
-        padding-left: 3em;
-        padding-right: 0.5rem;
-    }
-    .formulario-area{
-        padding: 0.5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .formulario-area--titulo p{
-        width: 100%;
-        font-size: 2rem;
-    }
-    .formulario-area--subtitulo p{
-        width: 100%;
-        font-size: 1rem;
-    }
-
-    .input{
-        width: 20rem;
-        height: 2rem;
-    }
-
-    .botao--wa{
-        width: 15em;
-    }
-
-/* Footer */
-
-    .footer-area{
-        padding: 1rem;
-        flex-wrap: wrap-reverse;
-        justify-content: center;
-    }
-    .footer-area--direita{
-        display: none;
-
-    }
 }
 
 
 
-/* Responsivo (364px - 0px) Topo Header*/
+/* ----- Responsivo Mobile 768px -----*/
 
-@media (max-width:363px) and (min-width:0px){
+@media screen and (max-width:768px){
+    header{
+        background-image: url(..//img/midias/Mobile768px/Mobile768_BG-Header1.jpg);
+        background-position: bottom;
+        height: 100%;
+        padding-bottom: 2rem;
+    }
+    .header-area{
+        padding: 0.5rem;
+        margin-top: 2rem;
+    }
     .header-area--right{
-        width: 60%;
-        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        width: 300px;
+        margin-top: -1rem;
     }
-    header::after {
-        height: 60%;
-        bottom: -42%;
-    }
-
     .pontos-header{
-        right: -5rem;
+        right: -1rem;
     }
     .header-area--left{
-        width: 100%;
-        align-items: center;
         display: flex;
+        justify-content: center;
         flex-direction: column;
-        padding: 1rem;
-        margin-top: 2rem;
+        align-items: center;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        width: 500px;
     }
     .logo-header{
         width: 40%;
-        height: 40%;
+        margin-bottom: 0rem;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
     }
     .titulos{
         margin-top: 1rem;
     }
     .titulos-titulo{
-        font-size: 1.5em;
-        text-align: center;
+        font-size: 1.5rem;
         width: 100%;
+        text-align: center;
     }
     .titulos-subtitulo{
-        font-size: 1em;
+        font-size: 100%;
         text-align: center;
     }
     .titulos-subtituloDois{
         flex-direction: row;
         justify-content: center;
+        margin-top: 1rem;
     }
 
     .fature{
@@ -1000,50 +868,68 @@
         width: 15rem;
         height: 2.5rem;
         font-size: 1em;
+        margin-bottom: 1rem;
+    }
+    .img-header{
+        width: 85%;
     }
 
 /* Historia */
-
+    #historia{
+        background-image: url(../img/midias/Mobile768px/Mobile768_BG-Historia2.jpg);
+        background-position: top;
+        height: 100%;
+        padding-bottom: 1rem;
+    }       
     .historia-area{
-        padding-top: 1rem;
+        width: 100%;
+        padding-top: 3rem;
+        padding-bottom: 5rem;
+    }
+    .historia-area--titulo{
+        margin-bottom: 1rem;
     }
     .historia-area--titulo p{
-        font-size: 20px;
+        font-size: 100%;
     }
-    
-    .--conteudo-texto p{
-        font-size: 15px;
-        padding: 1rem;        
-    }
+    .--conteudo-texto{
+        max-width: 100%;
 
+    }
+    .--conteudo-texto p{
+        font-size: 100%;
+        padding: 0.5rem;        
+    }
+    .--conteudo-img{
+        padding: 10px;
+    }
     .btn-historia{
         width: 15rem;
         height: 2.5rem;
         font-size: 1em;
     }
 
-    /* Transição investir */
-
-    #historia::after{
-        height: 40%;
-    }
-
 /* Investir */
-
-    .pq-investir{
-        padding-top: 25%;
+    #PQ_Investir{
+        background-image: url(../img/midias/Mobile768px/Mobile768_BG-Investimento.png);
+        background-position: top;
+        padding-bottom: 2rem;
     }
+
     .pq-investir--titulo{
+        margin-top: 3rem;
+        width: 100%;
+    }
+    .pq-investir--titulo p{
+        font-size: 100%;
+    }
+    .pq-investir--grid-itens {
+        width: 60%;
         margin-top: 1rem;
     }
-
-    .pq-investir--grid-itens {
-        width: 100%;
-        margin-top: 2rem;
-    }
     .item{
-        max-width: 120px;
-        height: 90px;
+        max-width: 7rem;
+        height: 6rem;
     }
     .item img{
         max-width: 20px;
@@ -1068,8 +954,8 @@
 /* A Procura */
 
     #A_Procura{
-        padding: 1rem;
-
+        padding: 0.5rem;
+        padding-bottom: 1rem;
     }
     .a-procura--area{
         flex-direction: column;
@@ -1088,7 +974,258 @@
     }
 
     .a-procura--btn{
+        width: 100%;
+    }
+    .btn-cta{
+        width: 100%;
+    }
+    .btn-cta button{
+        width:70% ;
+        height: 3rem;
+    }
+
+
+/* Formulario */
+    form{
+        width: 50%;
+        padding-left: 0.5em;
+        padding-right: 0.5rem;
+    }
+    .formulario-area{
+        padding: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .formulario-area--titulo p{
+        width: 100%;
+        font-size: 2rem;
+    }
+    .formulario-area--subtitulo p{
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .input{
+        max-width: 100%;
+        height: 2rem;
+    }
+
+    .btn-form{
+        max-width: 15rem;
+        height: 2.5rem;
+        font-size: 1em;
+    }
+
+/* Footer */
+
+    .footer-area{
+        padding: 1rem;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    .footer-area--informacao{
+        width: 100%;
+    }
+    .informacao--titulo p{
+        font-size: 3em;
+    }
+    .informacoes img {
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
+    }
+    .informacoes{
+        width: 100%;
+    }
+    .informacoes p{
+        font-size: 15px;
+    }
+    .informacao--redesSociais img{
+        width: 30px;
+    }
+    .footer-area--direita{
+        display: none;
+    }
+}
+
+
+/* ----- Responsivo Mobile 480px -----*/
+
+@media screen and (max-width:480px){
+    header{
+        background-image: url(..//img/midias/Mobile480px/Mobile480_BG-Header.jpg);
+        background-position: bottom;
+        height: 100%;
+    }
+    .header-area{
+        padding: 0.5rem;
+        display: flex;
+        justify-content: center;
         
+    }
+    .header-area--right{
+        display: flex;
+        justify-content: center;
+        width: 60%;
+        margin-top: 1rem;
+    }
+    .pontos-header{
+        right: -1rem;
+    }
+    .header-area--left{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+    }
+    .logo-header{
+        width: 40%;
+        margin-bottom: 1rem;
+    }
+    .titulos{
+        margin-top: 1rem;
+    }
+    .titulos-titulo{
+        font-size: 110%;
+        width: 100%;
+    }
+    .titulos-subtitulo{
+        font-size: 80%;
+        text-align: center;
+    }
+    .titulos-subtituloDois{
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .fature{
+        font-size: 1rem;
+    }
+    .btn-header{
+        width: 15rem;
+        height: 2.5rem;
+        font-size: 1em;
+    }
+
+    .header-area--right{
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+    }
+    .img-header{
+        width: 70%;
+    }
+
+/* Historia */
+    #historia{
+        background-image: url(../img/midias/Mobile480px/Mobile480_BG-Historia.jpg);
+        background-position: top;
+        height: 100%;
+        padding-bottom: 1rem;
+    }       
+    .historia-area{
+        width: 100%;
+        padding-top: 3rem;
+        padding-bottom: 5rem;
+    }
+    .historia-area--titulo{
+        margin-bottom: 1rem;
+    }
+    .historia-area--titulo p{
+        font-size: 100%;
+    }
+    .--conteudo-texto{
+        max-width: 100%;
+
+    }
+    .--conteudo-texto p{
+        font-size: 100%;
+        padding: 0.5rem;        
+    }
+    .--conteudo-img{
+        padding: 10px;
+    }
+    .btn-historia{
+        width: 15rem;
+        height: 2.5rem;
+        font-size: 1em;
+    }
+
+/* Investir */
+    #PQ_Investir{
+        background-image: url(../img/midias/Mobile480px/Mobile480_BG-Investimento.jpg);
+        padding-bottom: 2rem;
+    }
+
+    .pq-investir--titulo{
+        margin-top: 3rem;
+        width: 100%;
+    }
+    .pq-investir--titulo p{
+        font-size: 100%;
+    }
+    .pq-investir--grid-itens {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .item{
+        max-width: 7rem;
+        height: 6rem;
+    }
+    .item img{
+        max-width: 20px;
+        margin-bottom: 10px;
+    }
+    .item p{
+        font-size: 10px;
+    }
+    .item span{
+      font-size: 10px;  
+    }
+
+    .btn-investir{
+        width: 15rem;
+        height: 2.5rem;
+        font-size: 1em;
+    }
+
+    
+
+
+/* A Procura */
+
+    #A_Procura{
+        padding: 0.5rem;
+        padding-bottom: 1rem;
+    }
+    .a-procura--area{
+        flex-direction: column;
+        align-items: center;
+    }
+    .a-procura--titulos{
+        width: 100%;
+        margin: 0;
+    }
+
+    .a-procura--titulos h1{
+        font-size:1.5em;
+    }
+    .a-procura--titulos p{
+        font-size: 10px;
+    }
+
+    .a-procura--btn{
+        width: 100%;
+    }
+    .btn-cta{
+        width: 100%;
+    }
+    .btn-cta button{
+        width:70% ;
+        height: 3rem;
     }
 
 
@@ -1114,7 +1251,7 @@
     }
 
     .input{
-        max-width: 250px;
+        max-width: 100%;
         height: 2rem;
     }
 
@@ -1131,12 +1268,276 @@
         flex-wrap: wrap-reverse;
         justify-content: center;
     }
+    .footer-area--informacao{
+        width: 100%;
+    }
+    .informacao--titulo p{
+        font-size: 2em;
+    }
+    .informacoes img {
+        max-width: 25px;
+        max-height: 25px;
+        margin-right: 10px;
+    }
+    .informacoes{
+        width: 100%;
+    }
+    .informacoes p{
+        font-size: 10px;
+    }
     .footer-area--direita{
         display: none;
 
     }
+    .informacao--redesSociais img{
+        max-width: 20px;
+    }
 }
 
+
+
+/* ----- Responsivo (max 320) -----*/
+
+@media screen and (max-width:320px){d
+    header{
+        background-image: url(..//img/midias/Mobile320px/Mobile320_BG-Header.jpg);
+        background-position: bottom;
+        height: 100%;
+    }
+    .header-area{
+        padding: 0.5rem;
+    }
+    .header-area--right{
+        display: flex;
+        justify-content: center;
+        width: 60%;
+        margin-top: 1rem;
+    }
+    .pontos-header{
+        right: -1rem;
+    }
+    .header-area--left{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+    }
+    .logo-header{
+        width: 40%;
+        margin-bottom: 1rem;
+    }
+    .titulos{
+        margin-top: 1rem;
+    }
+    .titulos-titulo{
+        font-size: 110%;
+        width: 100%;
+    }
+    .titulos-subtitulo{
+        font-size: 80%;
+        text-align: center;
+    }
+    .titulos-subtituloDois{
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .fature{
+        font-size: 1rem;
+    }
+    .btn-header{
+        width: 15rem;
+        height: 2.5rem;
+        font-size: 1em;
+    }
+
+    .header-area--right{
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+    }
+    .img-header{
+        width: 70%;
+    }
+
+/* Historia */
+    #historia{
+        background-image: url(../img/midias/Mobile320px/Mobile320_BG-Historia.jpg);
+        background-position: top;
+        height: 100%;
+        padding-bottom: 1rem;
+    }       
+    .historia-area{
+        width: 100%;
+        padding-top: 3rem;
+        padding-bottom: 5rem;
+    }
+    .historia-area--titulo{
+        margin-bottom: 1rem;
+    }
+    .historia-area--titulo p{
+        font-size: 100%;
+    }
+    .--conteudo-texto{
+        max-width: 100%;
+
+    }
+    .--conteudo-texto p{
+        font-size: 100%;
+        padding: 0.5rem;        
+    }
+    .--conteudo-img{
+        padding: 10px;
+    }
+    .btn-historia{
+        width: 15rem;
+        height: 2.5rem;
+        font-size: 1em;
+    }
+
+/* Investir */
+    #PQ_Investir{
+        background-image: url(../img/midias/Mobile320px/Mobile320_BG-Investimento.png);
+        padding-bottom: 2rem;
+    }
+
+    .pq-investir--titulo{
+        margin-top: 3rem;
+        width: 100%;
+    }
+    .pq-investir--titulo p{
+        font-size: 100%;
+    }
+    .pq-investir--grid-itens {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .item{
+        max-width: 7rem;
+        height: 6rem;
+    }
+    .item img{
+        max-width: 20px;
+        margin-bottom: 10px;
+    }
+    .item p{
+        font-size: 10px;
+    }
+    .item span{
+      font-size: 10px;  
+    }
+
+    .btn-investir{
+        width: 15rem;
+        height: 2.5rem;
+        font-size: 1em;
+    }
+
+    
+
+
+/* A Procura */
+
+    #A_Procura{
+        padding: 0.5rem;
+        padding-bottom: 1rem;
+    }
+    .a-procura--area{
+        flex-direction: column;
+        align-items: center;
+    }
+    .a-procura--titulos{
+        width: 100%;
+        margin: 0;
+    }
+
+    .a-procura--titulos h1{
+        font-size:1.5em;
+    }
+    .a-procura--titulos p{
+        font-size: 10px;
+    }
+
+    .a-procura--btn{
+        width: 100%;
+    }
+    .btn-cta{
+        width: 100%;
+    }
+    .btn-cta button{
+        width:100% ;
+        height: 3rem;
+    }
+
+
+/* Formulario */
+    form{
+        width: 100%;
+        padding-left: 0.5em;
+        padding-right: 0.5rem;
+    }
+    .formulario-area{
+        padding: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .formulario-area--titulo p{
+        width: 100%;
+        font-size: 2rem;
+    }
+    .formulario-area--subtitulo p{
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .input{
+        max-width: 100%;
+        height: 2rem;
+    }
+
+    .btn-form{
+        max-width: 15rem;
+        height: 2.5rem;
+        font-size: 1em;
+    }
+
+/* Footer */
+
+    .footer-area{
+        padding: 1rem;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    .footer-area--informacao{
+        width: 100%;
+    }
+    .informacao--titulo p{
+        font-size: 2em;
+    }
+    .informacoes img {
+        max-width: 25px;
+        max-height: 25px;
+        margin-right: 10px;
+    }
+    .informacoes{
+        width: 100%;
+    }
+    .informacoes p{
+        font-size: 10px;
+    }
+    .footer-area--direita{
+        display: none;
+
+    }
+    .informacao--redesSociais img{
+        max-width: 20px;
+    }
+}
+
+/* ----- Fim - Responsivo (max 320) -----*/
 
 /* Formulario Pop-Up*/
 
@@ -1177,6 +1578,7 @@
 
 
 /* Botão cancelar */
+
 
 
     .form-conteudo img{
